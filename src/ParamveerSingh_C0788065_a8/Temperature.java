@@ -14,4 +14,11 @@ public class Temperature{
     public float feel_like_temperature(){
         return temperature * wind_speed;
     }
+
+    public String resultString(){
+        return "Day: " + day + "\n" +
+                "Temperature: " + temperature + "°C\n" +
+                "Wind Speed: " + wind_speed + "km/h\n" +
+                "Feel like temperature: " + feel_like_temperature();
+    }
 }
