@@ -20,6 +20,11 @@ public class CheckTemperature {
                 return;
             }
             Temperature temperature = new Temperature(day, temp, wind_speed);
+            JOptionPane.showMessageDialog(null, temperature.resultString());
+            int select = JOptionPane.showConfirmDialog(null, "Do you want to calculate for another day?");
+            if (select != JOptionPane.YES_OPTION) {
+                break;
+            }
         }
     }
 
