@@ -7,5 +7,6 @@ public class CheckTemperature {
         JOptionPane.showMessageDialog(null, "Welcome to the program.\n" +
                 "Here you can calculate feels like temperature \n" +
                 "based upon the day, temperature and wind speed.");
+
     }
 }
